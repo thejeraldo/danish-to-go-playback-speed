@@ -1,0 +1,104 @@
+.danish-audio-speed-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    gap: 5px;
+    margin: 8px 0;
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: normal;
+
+
+}
+
+.danish-audio-speed-label {
+    display: inline-flex;
+    align-items: center;
+
+    margin-right: 2px;
+
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 28px;
+
+    white-space: nowrap;
+
+
+}
+
+.danish-audio-speed-button {
+    appearance: none;
+    -webkit-appearance: none;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 42px;
+    height: 28px;
+
+    margin: 0;
+    padding: 3px 7px;
+
+    border: 1px solid #aaa;
+    border-radius: 4px;
+
+    background: #fff;
+    color: #222;
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1;
+
+    cursor: pointer;
+    box-sizing: border-box;
+
+
+}
+
+.danish-audio-speed-button:hover {
+    background: #f0f0f0;
+}
+
+.danish-audio-speed-button.selected {
+    background: #ddd;
+    border-color: #888;
+    font-weight: bold;
+}
+
+.danish-audio-speed-button:focus {
+    outline: 2px solid rgba(0, 120, 215, 0.35);
+    outline-offset: 1px;
+}
+
+@media (max-width: 600px) {
+    .danish-audio-speed-controls {
+        gap: 4px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding: 0 2px;
+    }
+
+    .danish-audio-speed-label {
+        width: 100%;
+        justify-content: center;
+        margin-right: 0;
+        line-height: 22px;
+    }
+
+    .danish-audio-speed-button {
+        min-width: 44px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+
+}

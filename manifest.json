@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Danish To Go - Playback Speed",
+  "version": "1.1.0",
+  "description": "Adds playback speed controls to Danish To Go audio players.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://studieskolen.danishtogo.dk/*"
+      ],
+      "css": [
+        "style.css"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
